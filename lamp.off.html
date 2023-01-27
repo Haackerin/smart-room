@@ -16,24 +16,30 @@
 </head>
 <body style="">
 <!-- <body style="background: url(../img/1\ 1.png)"> -->
-    <img src="./src/img/1 1.png" class="lamp-on" style="width:100vw ;">
+    <!-- <img src="./src/img/1 1.png" class="lamp-on" style="width:100vw ;"> -->
     <img src="./src/img/1-2.png" class="lamp-off" style="width:100vw ;">
 
     <div class="col-12 d-flex justify-content-between">
-        <button class="btn-power power-on">
-            <img src="./src/img/Linear/Essentional, UI/Power.svg" alt="">
-        </button>
-        <button class="btn-power power-off">
-            <img src="./src/img/Linear/Essentional, UI/Power.svg" alt="">
-        </button>
+        <a href="./lapm-on.html">
+            <button class="btn-power power-on">
+                <img src="./src/img/Linear/Essentional, UI/Power.svg" alt="">
+            </button>
+        </a>
+        <a href="./lamp.off.html">
+            <button class="btn-power power-off">
+                <img src="./src/img/Linear/Essentional, UI/Power.svg" alt="">
+            </button>
+        </a>
+        <a class="link" href="./door-open.html">door</a>
+
     </div>
 
 </body>
+
 <script src="./src/js/jquery-3.6.1.js"></script>
 <script>
     // new WOW().init();
-    $(document).ready(function(){
-            $("lapm-on").hide();
+            $("lapm-on").remove();
             $(".power-on").click(function(){
                 $("lapm-off").hide();
                 $("lapm-on").show();   
@@ -41,9 +47,6 @@
             $(".power-off").click(function(){
                 $("lapm-on").hide();
                 $("lapm-off").show();   
-         
-            })
-
 });
 </script>
 <script src="./src/js/materail_ripley.js"></script>

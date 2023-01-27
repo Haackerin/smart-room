@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart room</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="stylesheet" href="./src/css/animate.min.css">
+    <link rel="stylesheet" href="./src/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/on-off.css">
+</head>
+<body style="">
+<!-- <body style="background: url(../img/1\ 1.png)"> -->
+    <img src="./src/img/1 1.png" class="lamp-on" style="width:100vw ;">
+    <!-- <img src="./src/img/1-2.png" class="lamp-off" style="width:100vw ;"> -->
+
+    <div class="col-12 d-flex justify-content-between">
+        <a href="./lapm-on.html">
+            <button class="btn-power power-on">
+                <img src="./src/img/Linear/Essentional, UI/Power.svg" alt="">
+            </button>
+        </a>
+        <a href="./lamp.off.html">
+            <button class="btn-power power-off">
+                <img src="./src/img/Linear/Essentional, UI/Power.svg" alt="">
+            </button>
+        </a>
+        <a class="link" href="./door-open.html">door</a>
+
+    </div>
+</body>
+<script src="./src/js/jquery-3.6.1.js"></script>
+<script>
+    // new WOW().init();
+            $("lapm-on").remove();
+            $(".power-on").click(function(){
+                $("lapm-off").hide();
+                $("lapm-on").show();   
+            })
+            $(".power-off").click(function(){
+                $("lapm-on").hide();
+                $("lapm-off").show();   
+});
+</script>
+<script src="./src/js/materail_ripley.js"></script>
+<script src="./src/css/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./src/js/wow.js"></script>
+</html>

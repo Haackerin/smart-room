@@ -21,3 +21,11 @@ bottom: 2rem;
 .power-on{
     left: 2rem;
 }
+.link{
+    position: fixed;
+    bottom: 0.3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    left: 41%;
+}
